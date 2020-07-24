@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pachong", "pachong\pachong.pyproj", "{1C9C2641-F67E-4FD9-A147-19E5F4AE45E5}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "reques.py", "reques.py\reques.py.pyproj", "{23825E9D-DD33-48DD-BF68-D14E2FB84905}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C9C2641-F67E-4FD9-A147-19E5F4AE45E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9C2641-F67E-4FD9-A147-19E5F4AE45E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23825E9D-DD33-48DD-BF68-D14E2FB84905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23825E9D-DD33-48DD-BF68-D14E2FB84905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9C82452-1059-4985-8690-31306FB040B5}
+	EndGlobalSection
+EndGlobal
