@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/讯飞/AIUI_Web_API" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/讯飞/Speech-and-Text" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/讯飞/VideoSearchSys" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/讯飞/iflytek_sdk_python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/讯飞/raspberry-xunfei" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/讯飞/speech-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/讯飞/xfqa_utils" vcs="Git" />
+  </component>
+</project>

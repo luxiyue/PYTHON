@@ -1,4 +1,4 @@
-class BaiduFanyi:
+ class BaiduFanyi:
     def __init__(self,trans_str):
         self.trans_str = trans_str
         self.lang_detect_url = "http://fanyi.baidu.com/langdetect"
