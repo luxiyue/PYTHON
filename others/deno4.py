@@ -44,23 +44,30 @@
 #
 # talker()
 
-class Solution(object):
-    def longestCommonPrefix(self, strs):
-        """
-        :type strs: List[str]
-        :rtype: str
-        """
-        if len(strs)==0:
-            return ""
-        result = ""
-        minlen = min(len(strs[i]) for i in range(len(strs)))
-        for i in range(minlen):
-            temp = strs[0][i]
-            for str in strs:
-                if str[i] != temp:
-                    return result
-            result = result + temp
-        return result
-s = Solution()
-prefix = s.longestCommonPrefix(["aba", "abv", "aba"])
-print(prefix)
+# class Solution(object):
+#     def longestCommonPrefix(self, strs):
+#         """
+#         :type strs: List[str]
+#         :rtype: str
+#         """
+#         if len(strs)==0:
+#             return ""
+#         result = ""
+#         minlen = min(len(strs[i]) for i in range(len(strs)))
+#         for i in range(minlen):
+#             temp = strs[0][i]
+#             for str in strs:
+#                 if str[i] != temp:
+#                     return result
+#             result = result + temp
+#         return result
+# s = Solution()
+# prefix = s.longestCommonPrefix(["aba", "abv", "aba"])
+# print(prefix)
+
+
+x1 = 3
+x2 = 4
+x1,x2 = x2,x1
+print("x1 = "+str(x1))
+print("x2 = "+str(x2))

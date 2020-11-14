@@ -3,7 +3,6 @@
 装载本地Web页面
 
 '''
-
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
@@ -21,8 +20,6 @@ class WebEngineView(QMainWindow):
         self.browser.load(QUrl.fromLocalFile(url))
 
         self.setCentralWidget(self.browser)
-
-
         print(os.getcwd())
 if __name__ == '__main__':
 	app = QApplication(sys.argv)

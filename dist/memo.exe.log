@@ -1,2 +1,37 @@
 Cant Register Hotkey
 Cant Register Hotkey
+Traceback (most recent call last):
+  File "hotkey.pyw", line 35, in <module>
+  File "widget.pyo", line 22, in __init__
+  File "widget.pyo", line 96, in initProgram
+  File "widget.pyo", line 66, in initLabel
+  File "dataAccess.pyo", line 67, in read
+IOError: [Errno 2] No such file or directory: u'\u5468\u516d 8\u6708 15 2020.json'
+Traceback (most recent call last):
+  File "hotkey.pyw", line 35, in <module>
+  File "widget.pyo", line 22, in __init__
+  File "widget.pyo", line 96, in initProgram
+  File "widget.pyo", line 66, in initLabel
+  File "dataAccess.pyo", line 67, in read
+IOError: [Errno 2] No such file or directory: u'\u5468\u516d 8\u6708 15 2020.json'
+Traceback (most recent call last):
+  File "hotkey.pyw", line 35, in <module>
+  File "widget.pyo", line 22, in __init__
+  File "widget.pyo", line 96, in initProgram
+  File "widget.pyo", line 66, in initLabel
+  File "dataAccess.pyo", line 67, in read
+IOError: [Errno 2] No such file or directory: u'\u5468\u516d 8\u6708 15 2020.json'
+Traceback (most recent call last):
+  File "hotkey.pyw", line 35, in <module>
+  File "widget.pyo", line 22, in __init__
+  File "widget.pyo", line 96, in initProgram
+  File "widget.pyo", line 66, in initLabel
+  File "dataAccess.pyo", line 67, in read
+IOError: [Errno 2] No such file or directory: u'\u5468\u516d 8\u6708 15 2020.json'
+Traceback (most recent call last):
+  File "hotkey.pyw", line 35, in <module>
+  File "widget.pyo", line 22, in __init__
+  File "widget.pyo", line 96, in initProgram
+  File "widget.pyo", line 66, in initLabel
+  File "dataAccess.pyo", line 67, in read
+IOError: [Errno 2] No such file or directory: u'\u5468\u516d 8\u6708 15 2020.json'

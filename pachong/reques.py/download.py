@@ -8,7 +8,7 @@ def looking(mubiao):
     driver = webdriver.Chrome(executable_path = chrome_driver)
     driver.get('https://image.baidu.com/')
     driver.find_element_by_id('kw').send_keys(mubiao)
-    driver.find_element_by_class_name('s_search').click()
+    driver.find_element_by_class_name('s_newBtn').click()
     href = driver.find_element_by_name("pn0").get_attribute('href')
     print(href)
     return href
