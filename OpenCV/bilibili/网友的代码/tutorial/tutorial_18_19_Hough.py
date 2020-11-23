@@ -90,13 +90,13 @@ def detection_circles_demo(image):
 
 
 def main():
-    src = cv.imread("../images/sudoku.png")
-    cv.imshow("demo",src)
+    src = cv.imread("../images/home.jpg")
+    # cv.imshow("demo",src)
 
-    line_detection(src)
+    # line_detection(src)
     # line_detection_possible_demo(src)
-    # img = cv.imread("../images/circle.png")
-    # detection_circles_demo(img)
+    img = cv.imread("../images/circle.png")
+    detection_circles_demo(img)
     cv.waitKey(0)  # 等有键输入或者1000ms后自动将窗口消除，0表示只用键输入结束窗口
     cv.destroyAllWindows()  # 关闭所有窗口
 

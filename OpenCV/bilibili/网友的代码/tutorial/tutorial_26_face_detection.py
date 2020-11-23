@@ -45,22 +45,22 @@ def face_detection(image):
 
 
 def main():
-    src = cv.imread("../images/CrystalLiu1.jpg")
-    cv.namedWindow("input image", cv.WINDOW_AUTOSIZE)
-
-    cv.imshow("input image", src)
-    face_detection(src)
+    # src = cv.imread("../images/CrystalLiu1.jpg")
+    # cv.namedWindow("input image", cv.WINDOW_AUTOSIZE)
+    #
+    # cv.imshow("input image", src)
+    # face_detection(src)
 
     # 打开摄像头进行视频检测
-    # capture = cv.VideoCapture(0)
-    # cv.namedWindow("result", cv.WINDOW_AUTOSIZE)
-    # while True:
-    #     ret, frame = capture.read()
-    #     # frame = cv.flip(frame, 0)
-    #     face_detection(frame)
-    #     c = cv.waitKey(10)
-    #     if c == 27:
-    #         break
+    capture = cv.VideoCapture(0)
+    cv.namedWindow("result", cv.WINDOW_AUTOSIZE)
+    while True:
+        ret, frame = capture.read()
+        # frame = cv.flip(frame, 0)
+        face_detection(frame)
+        c = cv.waitKey(10)
+        if c == 27:
+            break
 
     cv.waitKey(0)
     cv.destroyAllWindows()  # 关闭所有窗口

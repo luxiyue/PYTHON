@@ -29,8 +29,8 @@ def edge_demo(image):
     grad_x = cv.Sobel(gray, cv.CV_16SC1, 1, 0)
     grad_y = cv.Sobel(gray, cv.CV_16SC1, 0, 1)
 
-    # edge_output = cv.Canny(grad_x, grad_y, 30, 150)
-    edge_output = cv.Canny(gray, 50, 150)
+    edge_output = cv.Canny(grad_x, grad_y, 30, 150)
+    # edge_output = cv.Canny(gray, 50, 150)
     cv.imshow("gray", gray)
     cv.imshow("Canny demo", edge_output)
 

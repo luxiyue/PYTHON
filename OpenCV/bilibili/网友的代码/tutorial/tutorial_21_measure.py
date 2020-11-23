@@ -8,7 +8,7 @@ def measure_object(image):
     print("threshold value: %s"%ret)
     cv.imshow("binary image", binary)
 
-    contours, hierarchy = cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+    outimg,contours, hierarchy = cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
     for i, contour in enumerate(contours):
         cv.drawContours(image, contours, i, (0, 255, 255), 1)  # 用黄色线条画出轮廓
 
@@ -41,7 +41,7 @@ def contour_approx(image):
     print("threshold value: %s" % ret)
     cv.imshow("binary image", binary)
 
-    contours, hierarchy = cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+    outimg,contours, hierarchy = cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
     for i, contour in enumerate(contours):
         cv.drawContours(image, contours, i, (0, 0, 255), 2)  # 用红色线条画出轮廓
 
@@ -68,12 +68,12 @@ def contour_approx(image):
 
 
 def main():
-    # src = cv.imread("../images/handwriting.jpg")
-    # cv.imshow("demo",src)
-    # measure_object(src)
+    src = cv.imread("../images/handwriting.jpg")
+    cv.imshow("demo",src)
+    measure_object(src)
 
-    img = cv.imread("../images/approximate.png")
-    contour_approx(img)
+    # img = cv.imread("../images/approximate.png")
+    # contour_approx(img)
     cv.waitKey(0)  # 等有键输入或者1000ms后自动将窗口消除，0表示只用键输入结束窗口
     cv.destroyAllWindows()  # 关闭所有窗口
 

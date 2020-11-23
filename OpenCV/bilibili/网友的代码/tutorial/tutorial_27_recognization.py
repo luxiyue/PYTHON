@@ -21,7 +21,7 @@ On Mac
     brew install tesseract
 On Windows
     先下载tesseract包：https://github.com/UB-Mannheim/tesseract/wiki. 
-    然后修改pytesseract.py中tesseract_cmd指向的路径：tesseract_cmd = 'C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe'
+    然后修改pytesseract.py中tesseract_cmd指向的路径：tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
     
 references: https://pypi.org/project/pytesseract/ (INSTALLATION section) and https://github.com/tesseract-ocr/tesseract/wiki#installation
 """

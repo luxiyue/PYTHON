@@ -20,6 +20,7 @@ def erode_demo(image):
     """
     print(image.shape)
     gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
+    #注意第4个参数可以cv.THRESH_BINARY_INV
     ret, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
     cv.imshow("binary", binary)
 

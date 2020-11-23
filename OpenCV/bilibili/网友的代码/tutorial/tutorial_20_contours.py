@@ -49,7 +49,9 @@ def contours_demo(image):
         轮廓（第二个返回值）是一个 Python 列表，其中存储这图像中的所有轮廓。
         每一个轮廓都是一个 Numpy 数组，包含对象边界点（x，y）的坐标。
     """
-    contours, hierarchy= cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+    #下面的第一个参数可以放二值图，也可以放 边缘提取图
+    imgg,contours, hierarchy = cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+    # imgg,contours, hierarchy = cv.findContours(binary, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
     for i, contour in enumerate(contours):
         # 函数 cv2.drawContours() 可以被用来绘制轮廓。它可以根据你提供的边界点绘制任何形状。
         # 它的第一个参数是原始图像，第二个参数是轮廓，一个 Python 列表。
@@ -57,6 +59,8 @@ def contours_demo(image):
         # 接下来的参数是轮廓的颜色和厚度等。
         cv.drawContours(image, contours, i, (0, 0, 255), 2)  # 2为像素大小，-1时填充轮廓
         print(i)
+    #上面的循环语句可以用下面的一行代替
+    # cv.drawContours(image, contours, i, (0, 0, 255), 2)
     cv.imshow("detect contours", image)
 
 
@@ -64,6 +68,7 @@ def main():
     src = cv.imread("../images/circle.png")
     cv.imshow("demo",src)
     contours_demo(src)
+    cv.imshow("edge-image",edge_demo(src))
     cv.waitKey(0)  # 等有键输入或者1000ms后自动将窗口消除，0表示只用键输入结束窗口
     cv.destroyAllWindows()  # 关闭所有窗口
 
