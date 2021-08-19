@@ -41,3 +41,8 @@ t8  = np.round(t7,2)
 print(t8)
 print(t8.dtype)
 
+print("----------------------")
+p = [[1,2,3],[4,5,6],[7,8,9]]
+p1 = np.array(p)
+print(p1)
+

@@ -4,6 +4,8 @@ import cv2
 img = cv2.imread('../img/cloud.jpg')
 # 灰度图像
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# print(img.shape)
+# print(gray.shape)
 
 # 二值化
 ret, binary = cv2.threshold(gray, 175, 255, cv2.THRESH_BINARY)

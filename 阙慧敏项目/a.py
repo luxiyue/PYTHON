@@ -11,7 +11,7 @@ class WebEngineView(QMainWindow):
         self.setWindowTitle('笔记查询页面')
         self.setGeometry(5, 30, 1355, 730)
         self.browser = QWebEngineView()
-        self.browser.load(QUrl('http://localhost:8888/perfectweb2/'))
+        self.browser.load(QUrl('http://localhost:8888'))
         self.setCentralWidget(self.browser)
 
 

@@ -32,7 +32,7 @@ if __name__ == '__main__':
     print("-----主线程开始-----")
     queue = Queue()
     #创建两个线程类
-    producer = P+roducer("Producer",queue)
+    producer = Producer("Producer",queue)
     consumer = Consumer("Consumer",queue)
     #执行子线程
     producer.start()

@@ -80,7 +80,7 @@ cv2.putText(lap,"guass",(50,50),cv2.FONT_HERSHEY_SIMPLEX,1.5,(0,100,255),4)
 
 cv2.imshow("lap",lap)
 cv2.imshow('robert', edge2)
-cv2.imshow('src', src)
+cv2.imshow('src_s', src_s)
 cv2.imshow('sobel', edgesobel2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
